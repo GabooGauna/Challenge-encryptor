@@ -125,6 +125,7 @@ header{
 }
 
 .right__textarea{
+    background-color: transparent;
     width: 80%;
     resize: none;
     outline: none;
