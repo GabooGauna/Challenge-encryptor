@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <header class="header__main">
+      <img class="header__img" src="/img/Logo.png" alt="page logo" />
+    </header>
+    <main class="main-content">
+      <section class="content">
+        <article class="left">
+          <textarea
+            class="left__textarea"
+            placeholder="Enter the text here"
+          ></textarea>
+          <p class="buttons__text">Only lowercase letters and no accents</p>
+          <div class="buttons">
+            <button class="buttons__encrypt">Encrypt</button>
+            <button class="buttons__decrypt">Decrypt</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="response">
+        <article class="right">
+          <img class="right__img" src="/img/Muñeco.png" />
+          <h3 class="right__title">No message was found</h3>
+          <textarea class="right__textarea" name="name" cols="30" rows="10">
+Enter the text you want to encrypt or decrypt</textarea
+          >
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
