@@ -11,23 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <title>Encriptador</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Encryptor</title>
   </head>
   <body>
     <header class="header__main">
-      <img class="header__img" src="/img/Logo.png" alt="page logo" />
+      <a href="index.html">
+        <img class="header__img" src="/img/Logo.png" alt="page logo" />
+      </a>
     </header>
+
     <main class="main-content">
       <section class="content">
         <article class="left">
           <textarea
+            id="text-entry"
             class="left__textarea"
             placeholder="Enter the text here"
           ></textarea>
           <p class="buttons__text">Only lowercase letters and no accents</p>
           <div class="buttons">
-            <button class="buttons__encrypt">Encrypt</button>
-            <button class="buttons__decrypt">Decrypt</button>
+            <button class="buttons__encrypt" onclick="encriptar()">
+              Encrypt
+            </button>
+            <button class="buttons__decrypt" onclick="desencriptar()">
+              Decrypt
+            </button>
           </div>
         </article>
       </section>
@@ -39,9 +48,11 @@
           <textarea class="right__textarea" name="name" cols="30" rows="10">
 Enter the text you want to encrypt or decrypt</textarea
           >
+          <button class="copy" onclick="copiar()">Copy</button>
         </article>
       </section>
     </main>
     <script src="script.js"></script>
+    <script src="sweetAlert.js"></script>
   </body>
 </html>
