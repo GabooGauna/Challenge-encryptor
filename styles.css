@@ -14,7 +14,7 @@ body{
 /* header */
 header{
     width: 100%;
-    height: 10vh;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +120,9 @@ header{
 .right{
     text-align: center;
 }
+.right__img{
+    height: 250px;
+}
 
 .right__textarea{
     width: 80%;
@@ -127,7 +130,7 @@ header{
     outline: none;
     text-align: center;
     color: #0A3871;
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -135,8 +138,8 @@ header{
 @media screen and (min-width: 767px) and (max-width: 991px) {
     .main-content{
         flex-direction: column;
-        height: 100vh;
-        margin-top: 18%;
+        margin-top: 6%;
+        height: 100%;
     }
     .left__textarea{
         margin-bottom: 5%;
@@ -155,11 +158,11 @@ header{
 }
 
 /* media query phone */
-@media screen and (min-width: 481px) and (max-width: 767px){
+@media screen and (min-width: 550px) and (max-width: 767px){
     .main-content{
         flex-direction: column;
-        height: 100vh;
-        margin-top: 20%;
+        margin-top: 8%;
+        height: 100%;
     }
     .content{
         width: 80%;
@@ -167,6 +170,11 @@ header{
     }
     .left__textarea{
         margin-bottom: 5%;
+    }
+    
+    .buttons__decrypt, .buttons__encrypt{
+        font-size: 18px;
+        width: 100%;
     }
     .right__img{
         display: none;
@@ -177,11 +185,11 @@ header{
     }
 }
 
-@media screen and (min-width: 350px) and (max-width: 481px){
+@media screen and (min-width: 350px) and (max-width: 650px){
     .main-content{
         flex-direction: column;
-        height: 100vh;
-        margin-top: 35%;
+        margin-top: 12%;
+        height: 100%;
     }
     .content{
         width: 80%;
@@ -192,9 +200,11 @@ header{
     }
     .buttons{
         margin-top: 8%;
+        flex-direction: column;
     }
     .buttons__decrypt, .buttons__encrypt{
         font-size: 18px;
+        width: 100%;
     }
     .right__img{
         display: none;
